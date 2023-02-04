@@ -200,6 +200,7 @@ img {
   cursor: pointer;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .primary-btn {
@@ -209,8 +210,6 @@ img {
   margin-right: auto;
   border-radius: 4px;
   border: transparent;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 
 .primary-btn:hover,
@@ -477,6 +476,17 @@ img {
   font-size: 16px;
   line-height: calc(24 / 16);
   opacity: 0;
+  transition: opacity 250ms var(--timing-function);
+  transform: 250ms var(--timing-function);
+  transform: translateY(300px);
+}
+
+.filter-link:hover .filter-thumb::before,
+.filter-link:hover .thumb-text,
+.filter-link:focus .filter-thumb::before,
+.filter-link:focus .thumb-text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ICONS-socials*/
