@@ -148,9 +148,7 @@ img {
 .navigation-list {
   list-style: none;
 }
-/* .porfolio-link:visited {
-  color: var(--pressed-state);
-} */
+
 /* Contacs */
 .contact-item {
   color: var(--text);
