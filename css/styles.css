@@ -268,6 +268,7 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   padding: 12px 24px;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .secondary-btn:hover,
@@ -399,8 +400,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 
 .img-text {
@@ -424,8 +423,6 @@ img {
   margin: 0;
   margin-left: -24px;
   margin-top: 24px;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 .filter-list > .filter-item {
   flex-basis: calc(100% / 3 - 24px);
@@ -494,12 +491,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 40px;
   height: 40px;
   background-color: var(--primary-brand);
   border-radius: 50%;
   fill: var(--background-white);
+  transition: background-color 250ms var(--timing-function);
 }
 .socials-list {
   display: flex;
@@ -544,6 +541,8 @@ img {
   color: var(--subtle-text);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
+  transition: color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .client-link:hover,
